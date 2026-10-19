@@ -1,324 +1,867 @@
+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bagus Fatur Rahman | Portfolio</title>
-        <link rel="stylesheet" href="assets/style.css?v=2026">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Bagus Fatur Rahman — IT Support, Front End Developer, and technology enthusiast based in Padang, Indonesia.">
+    <meta name="author" content="Bagus Fatur Rahman">
+
+    <title>Bagus Fatur Rahman | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="assets/style.css?v=20261019">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
 <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-        <h2 class="logo">BFR</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="project.html">Project</a></li>
-            </ul>
-        </nav>
 
-        <!-- Landing Page -->
-        <section id="home" class="hero">
-            <div class="profile-img">
-                <img src="/assets/baguspng.png" alt="Bagus Fatur Rahman" />
-            </div>
-            <h1>Hi, I am <span>Bagus Fatur Rahman</span></h1>
-            <h2 class="typing">
-            I am a <span id="role"></span><span class="cursor">|</span>
-            </h2>
-            
-            <!-- Download CV Button -->
-            <a href="assets/cv/CV_BAGUSFATURRAHMAN_ITSUPERVISOR.pdf" 
-                class="btn-cv" 
-                download>
-                Download CV
-            </a>
-        </section>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">BFR<span>.</span></a>
 
-        <!-- About -->
-        <section id="about" class="section">
-            <h3>About me</h3>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+        </ul>
 
-            <!-- Short content -->
-            <div class="about-preview">
-                <p><b>Dear Yth,</b></p>
-                <p>
-                Thank you for visiting my profile. I am glad to connect with you.
-                Please excuse my English. I am still learning and continuously improving my communication skills.
+        <a href="assets/cv/CV_BAGUSFATURRAHMAN_ITSUPERVISOR.pdf"
+           class="nav-cta"
+           target="_blank"
+           rel="noopener noreferrer">
+            My Resume <span>↗</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+
+            <div class="hero-content">
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    IT Support &amp; Web Development
+                </div>
+
+                <p class="hero-greeting">HELLO, WORLD! I'M</p>
+
+                <h1>
+                    Bagus Fatur<br>
+                    <span>Rahman.</span>
+                </h1>
+
+                <h2 class="hero-role">
+                    I'm a <span id="role"></span><span class="cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    An IT professional passionate about technology, system
+                    reliability, and web development. I enjoy solving problems,
+                    building digital solutions, and continuously developing
+                    my technical skills.
                 </p>
-            </div>
 
-            <!-- Hidden content -->
-            <div class="about-more">
-                <p>
-                You can call me <em><b>Bagus</b></em>. Currently, I work as an IT Support at Hotel ibis Padang,
-                where I am responsible for supporting daily IT operations and ensuring system reliability.
-                </p>
-                <p>
-                I am an adaptable and motivated person who is continuously developing my skills in the IT field,
-                particularly in Front End Development. I understand that this journey is not easy, but I am committed
-                to learning and growing through both professional experience and self-development.
-                </p>
-                <p>
-                In addition to my work, I actively participate in webinars, workshops, and other learning activities
-                to enhance my knowledge and expand my professional network.
-                </p>
-                <p><em>I am confident in my abilities and always eager to learn new things.</em></p>
-                <p><b>Best Regards,</b><br><b>Bagus Fatur Rahman</b></p>
-            </div>
-            <!-- Button -->
-            <button class="btn-more" id="toggleAbout">Lihat selengkapnya</button>
-        </section>
-
-        <!-- Skills -->
-        <section id="about" class="section">
-            <h3>Skills</h3>
-
-            <div class="skills">
-                <div class="skill">
-                    <img src="assets/skills/html.png" alt="HTML">
-                    <span>HTML</span>
-                </div>
-
-                <div class="skill">
-                    <img src="assets/skills/css.svg" alt="CSS">
-                    <span>CSS</span>
-                </div>
-
-                <div class="skill">
-                    <img src="assets/skills/js.png" alt="JavaScript">
-                    <span>JavaScript</span>
-                </div>
-
-                <div class="skill">
-                    <img src="assets/skills/php.png" alt="PHP">
-                    <span>PHP</span>
-                </div>
-
-                <div class="skill">
-                    <img src="assets/skills/MySQL.png" alt="MySQL">
-                    <span>MySQL</span>
-                </div>
-
-                <div class="skill">
-                    <img src="assets/skills/typescript.png" alt="typescript">
-                    <span>TypeScript</span>
-                </div>
-
-                <div class="skill">
-                    <img src="assets/skills/react.png" alt="react">
-                    <span>React Js</span>
-                </div>
-                
-                <div class="skill">
-                    <img src="assets/skills/tailwind.png" alt="Tailwind">
-                    <span>Tailwind CSS</span>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects" class="section">
-        <h3>My Projects</h3>
-
-            <div class="project-cards">
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="/assets/ruangriang.png" alt="Project 1">
-                    </div>
-                    <div class="project-body">
-                        <h4>Company Profile - Ruang Riang</h4>
-                        <p>Responsive company profile website.</p>
-                        <a href="https://ruang-riang.vercel.app/">View Project</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="/assets/tiyitihindi.png" alt="Project 2">
-                    </div>
-                    <div class="project-body">
-                        <h4>e commerce - Tiyiti Hindi</h4>
-                        <p>Dynamic web application.</p>
-                        <a href="https://bgood.wuaze.com/">View Project</a>
-                    </div>
-                </div>
-            </div>
-        <!-- Button Lihat Lainnya -->
-            <div class="project-more">
-                <a href="project.html" class="btn-more">Lihat Lainnya</a>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section class="section" id="education">
-            <h3>Education</h3>
-
-            <div class="education">
-                <a href="https://filkom.upiyptk.ac.id/sistem-informasi/" target="_blank" class="edu-card">
-                    <img src="assets/education/Logo_UPI-YPTK.jpg" alt="Logo_UPI-YPTK">
-                    <h4>Universitas Putra Indonesia "YPTK" Padang</h4>
-                    <p>Informatika System</p>
-                    <span>2019 – 2024</span>
-                </a>
-
-                <a href="https://www.semenpadang.co.id/id" target="_blank" class="edu-card">
-                    <img src="assets/education/LOGO PT SEMEN PADANG HITAM.png" alt="semen padang">
-                    <h4>Internship - PT. Semen Padang</h4>
-                    <p>Help Desk IT</p>
-                    <span>Juni – Juli 2022</span>
-                </a>
-
-                <a href="https://sisi.id/" target="_blank" class="edu-card">
-                    <img src="assets/education/sisi.webp" alt="Sisi">
-                    <h4>Probation - PT. Sinergi Informatika Semen Indonesia</h4>
-                    <p>Junior Engineer</p>
-                    <span>Juni – Agustus 2024</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section class="section">
-        <h3>Experience</h3>
-            <div class="education">
-                    <a href="https://all.accor.com/hotel/9099/index.id.shtml" target="_blank" class="edu-card">
-                        <img src="assets/career/hotel-ibis.png" alt="hotel-ibis">
-                        <h4>Hotel IBIS Padang</h4>
-                        <p>IT Officer | IT Support</p>
-                        <span>2024 – Now</span>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work <span>↗</span>
                     </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        About Me <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <span><span class="meta-icon">⌖</span> Padang, Indonesia</span>
+                    <span class="meta-divider"></span>
+                    <span>IT Support · Web Development</span>
+                </div>
             </div>
-        </section>
+
+            <div class="hero-visual">
+                <div class="visual-glow"></div>
+
+                <div class="profile-frame">
+                    <img src="assets/baguspng.png"
+                         alt="Portrait of Bagus Fatur Rahman"
+                         class="profile-photo">
+                </div>
+
+                <div class="floating-card card-top">
+                    <span class="floating-icon">✦</span>
+                    <div>
+                        <strong>Problem Solver</strong>
+                        <small>Technology &amp; Innovation</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <span class="floating-icon">&lt;/&gt;</span>
+                    <div>
+                        <strong>Always Learning</strong>
+                        <small>Growing through experience</small>
+                    </div>
+                </div>
+
+                <div class="visual-label">BFR / PORTFOLIO 2026</div>
+            </div>
+
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+            <span></span> SCROLL TO EXPLORE
+        </a>
+    </section>
 
 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+        <div class="section-container">
 
-            /* =========================
-                TYPING EFFECT
-            ========================= */
-            const roles = [
-                "Front End Developer",
-                "IT Support",
-                "Software Engineer"
-            ];
+            <div class="section-heading">
+                <span class="eyebrow">GET TO KNOW ME</span>
+                <h2>About <span>Me.</span></h2>
+                <p>A little introduction about who I am and what I do.</p>
+            </div>
 
-            const roleElement = document.getElementById("role");
+            <div class="about-grid">
 
-            let roleIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
+                <div class="about-intro">
+                    <div class="about-mark">BFR<span>.</span></div>
 
-            function typeEffect() {
-                const currentRole = roles[roleIndex];
+                    <h3>Technology is not just about systems. It's about solving problems.</h3>
 
-                if (!isDeleting) {
-                roleElement.textContent = currentRole.substring(0, charIndex + 1);
+                    <p>
+                        My professional journey combines IT operations,
+                        technical support, and an interest in building
+                        meaningful digital experiences.
+                    </p>
+
+                    <div class="about-highlight">
+                        <span class="highlight-line"></span>
+                        <p>
+                            I believe that continuous learning, adaptability,
+                            and consistency are essential to growing in the
+                            technology industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <div class="about-label">
+                        <span class="section-number">01</span>
+                        <h3>Who I Am</h3>
+                    </div>
+
+                    <div class="about-copy">
+                        <p>
+                            Hello, you can call me <strong>Bagus</strong>.
+                            I currently work as an IT Officer / IT Support
+                            at Hotel ibis Padang, where I support daily IT
+                            operations and help maintain reliable technology
+                            services.
+                        </p>
+
+                        <p>
+                            Alongside my professional responsibilities, I am
+                            developing my skills in front-end development and
+                            web application development. I enjoy exploring
+                            how technology can make workflows more efficient
+                            and improve the way people work.
+                        </p>
+
+                        <div class="about-more" id="aboutMore" hidden>
+                            <p>
+                                I am motivated to learn new technologies,
+                                strengthen my technical foundation, and gain
+                                experience through practical projects and
+                                professional collaboration.
+                            </p>
+
+                            <p>
+                                I also value learning opportunities such as
+                                webinars, workshops, and other activities
+                                that help me expand my knowledge and
+                                professional network.
+                            </p>
+
+                            <p>
+                                My goal is to keep growing as a technology
+                                professional while creating solutions that
+                                are useful, reliable, and accessible.
+                            </p>
+                        </div>
+
+                        <button class="text-button"
+                                id="toggleAbout"
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="aboutMore">
+                            Read More <span>↗</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="value-grid">
+                <div class="value-card">
+                    <span class="value-number">01</span>
+                    <h4>Problem Solving</h4>
+                    <p>Analyzing technical issues and finding practical solutions.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-number">02</span>
+                    <h4>Continuous Learning</h4>
+                    <p>Improving my knowledge through practice and exploration.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-number">03</span>
+                    <h4>Adaptability</h4>
+                    <p>Adjusting to new challenges, tools, and work environments.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span class="eyebrow">TECHNICAL EXPERTISE</span>
+                <h2>Skills &amp; <span>Tools.</span></h2>
+                <p>Technologies I have explored and continue to develop.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/html.png" alt="HTML5">
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Web Structure</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/css.svg" alt="CSS">
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Web Styling</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/js.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Web Interaction</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/php.png" alt="PHP">
+                    </div>
+                    <h3>PHP</h3>
+                    <p>Backend Development</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/MySQL.png" alt="MySQL">
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>Database Management</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/typescript.png" alt="TypeScript">
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>Typed JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/react.png" alt="React">
+                    </div>
+                    <h3>React JS</h3>
+                    <p>UI Development</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assets/skills/tailwind.png" alt="Tailwind CSS">
+                    </div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Utility-First CSS</p>
+                </div>
+
+            </div>
+
+            <div class="skills-note">
+                <span>✦</span>
+                My technical skills continue to grow through hands-on projects
+                and professional experience.
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+        <div class="section-container">
+
+            <div class="section-heading heading-with-link">
+                <div>
+                    <span class="eyebrow">SELECTED WORK</span>
+                    <h2>Featured <span>Projects.</span></h2>
+                    <p>A selection of websites and digital projects.</p>
+                </div>
+
+                <a href="project.html" class="btn btn-secondary desktop-project-link">
+                    All Projects <span>↗</span>
+                </a>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <a href="https://ruang-riang.vercel.app/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-image">
+                        <img src="assets/ruangriang.png"
+                             alt="Ruang Riang company profile website"
+                             loading="lazy">
+                        <span class="project-open">↗</span>
+                    </a>
+
+                    <div class="project-content">
+                        <div class="project-category">
+                            <span>01</span>
+                            <span>WEB DEVELOPMENT</span>
+                        </div>
+
+                        <h3>Ruang Riang</h3>
+
+                        <p>
+                            A responsive company profile website designed
+                            to present a brand and its information online.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive UI</span>
+                        </div>
+
+                        <a href="https://ruang-riang.vercel.app/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View Live Project <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <a href="https://bgood.wuaze.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-image">
+                        <img src="assets/tiyitihindi.png"
+                             alt="Tiyiti Hindi e-commerce website"
+                             loading="lazy">
+                        <span class="project-open">↗</span>
+                    </a>
+
+                    <div class="project-content">
+                        <div class="project-category">
+                            <span>02</span>
+                            <span>WEB APPLICATION</span>
+                        </div>
+
+                        <h3>Tiyiti Hindi</h3>
+
+                        <p>
+                            A web-based e-commerce project focused on
+                            presenting products and delivering a dynamic
+                            online experience.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Web App</span>
+                            <span>E-commerce</span>
+                            <span>UI Design</span>
+                        </div>
+
+                        <a href="https://bgood.wuaze.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View Live Project <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="mobile-project-link">
+                <a href="project.html" class="btn btn-secondary">
+                    Explore All Projects <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span class="eyebrow">MY BACKGROUND</span>
+                <h2>Education &amp; <span>Learning.</span></h2>
+                <p>Academic background and early professional development.</p>
+            </div>
+
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-date">2019 — 2024</div>
+
+                    <a href="https://filkom.upiyptk.ac.id/sistem-informasi/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="timeline-card">
+
+                        <div class="timeline-logo">
+                            <img src="assets/education/Logo_UPI-YPTK.jpg"
+                                 alt="Universitas Putra Indonesia YPTK logo"
+                                 loading="lazy">
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-type">EDUCATION</span>
+                            <h3>Universitas Putra Indonesia YPTK Padang</h3>
+                            <p>Information Systems</p>
+                            <span class="timeline-detail">
+                                Academic background in information systems and technology.
+                            </span>
+                        </div>
+
+                        <span class="timeline-arrow">↗</span>
+                    </a>
+                </article>
+
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-date">June — July 2022</div>
+
+                    <a href="https://www.semenpadang.co.id/id"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="timeline-card">
+
+                        <div class="timeline-logo">
+                            <img src="assets/education/LOGO PT SEMEN PADANG HITAM.png"
+                                 alt="PT Semen Padang logo"
+                                 loading="lazy">
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-type">INTERNSHIP</span>
+                            <h3>PT Semen Padang</h3>
+                            <p>IT Help Desk</p>
+                            <span class="timeline-detail">
+                                Practical exposure to IT support and technical assistance.
+                            </span>
+                        </div>
+
+                        <span class="timeline-arrow">↗</span>
+                    </a>
+                </article>
+
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-date">June — August 2024</div>
+
+                    <a href="https://sisi.id/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="timeline-card">
+
+                        <div class="timeline-logo">
+                            <img src="assets/education/sisi.webp"
+                                 alt="Sinergi Informatika Semen Indonesia logo"
+                                 loading="lazy">
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-type">PROBATION</span>
+                            <h3>PT Sinergi Informatika Semen Indonesia</h3>
+                            <p>Junior Engineer</p>
+                            <span class="timeline-detail">
+                                Professional exposure to engineering and technology operations.
+                            </span>
+                        </div>
+
+                        <span class="timeline-arrow">↗</span>
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience">
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span class="eyebrow">PROFESSIONAL JOURNEY</span>
+                <h2>Work <span>Experience.</span></h2>
+                <p>My professional experience in IT operations and support.</p>
+            </div>
+
+            <article class="experience-card">
+
+                <div class="experience-top">
+                    <div class="experience-logo">
+                        <img src="assets/career/hotel-ibis.png"
+                             alt="Hotel ibis logo"
+                             loading="lazy">
+                    </div>
+
+                    <div class="experience-heading">
+                        <span class="timeline-type">HOSPITALITY · INFORMATION TECHNOLOGY</span>
+                        <h3>Hotel ibis Padang</h3>
+                        <p>IT Officer | IT Support</p>
+                    </div>
+
+                    <span class="experience-period">2024 — Present</span>
+                </div>
+
+                <div class="experience-divider"></div>
+
+                <div class="experience-description">
+                    <h4>Role Overview</h4>
+
+                    <p>
+                        Supporting daily IT operations and helping maintain
+                        the reliability of technology systems in a hospitality
+                        environment.
+                    </p>
+
+                    <div class="experience-focus">
+                        <span>IT Operations</span>
+                        <span>Technical Support</span>
+                        <span>Troubleshooting</span>
+                        <span>System Reliability</span>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- CLOSING CTA -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <span class="eyebrow">LET'S CONNECT</span>
+
+            <h2>Good things happen<br>when <span>we collaborate.</span></h2>
+
+            <p>
+                Thank you for taking the time to explore my portfolio.
+                I'm always interested in learning, sharing ideas, and
+                discovering new opportunities.
+            </p>
+
+            <a href="project.html" class="btn btn-light">
+                Explore More Projects <span>↗</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <a href="#home" class="footer-logo">BFR<span>.</span></a>
+
+            <p>
+                Designed &amp; developed by
+                <strong>Bagus Fatur Rahman</strong>
+            </p>
+
+            <a href="#home" class="back-to-top">
+                Back to top ↑
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="currentYear"></span> Bagus Fatur Rahman.
+                All rights reserved.
+            </p>
+            <p>Built with curiosity and continuous learning.</p>
+        </div>
+    </footer>
+
+
+    <!-- WELCOME POPUP -->
+    <div class="popup-overlay" id="welcomePopup" hidden>
+        <div class="popup-box"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="popupTitle">
+
+            <div class="popup-symbol">BFR<span>.</span></div>
+
+            <span class="eyebrow">WELCOME TO MY PORTFOLIO</span>
+
+            <h2 id="popupTitle">Hello, there!</h2>
+
+            <p>
+                Thank you for visiting my personal portfolio.
+                Feel free to explore my background, skills, and projects.
+            </p>
+
+            <button id="popupBtn" class="btn btn-primary" type="button">
+                Let's Explore <span>↗</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        /* TYPING EFFECT */
+        const roleElement = document.getElementById("role");
+
+        const roles = [
+            "IT Support",
+            "Front End Developer",
+            "Software Engineer"
+        ];
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+
+        function typeEffect() {
+            if (!roleElement) return;
+
+            const currentRole = roles[roleIndex];
+
+            if (!deleting) {
                 charIndex++;
+                roleElement.textContent = currentRole.substring(0, charIndex);
 
-                if (charIndex === currentRole.length) {
-                    setTimeout(() => isDeleting = true, 1200);
+                if (charIndex >= currentRole.length) {
+                    deleting = true;
+                    setTimeout(typeEffect, 1500);
+                    return;
                 }
-                } else {
-                roleElement.textContent = currentRole.substring(0, charIndex - 1);
+            } else {
                 charIndex--;
+                roleElement.textContent = currentRole.substring(0, charIndex);
 
-                if (charIndex === 0) {
-                    isDeleting = false;
+                if (charIndex <= 0) {
+                    deleting = false;
                     roleIndex = (roleIndex + 1) % roles.length;
                 }
-                }
-
-                setTimeout(typeEffect, isDeleting ? 60 : 100);
             }
 
-            if (roleElement) typeEffect();
-
-
-            /* =========================
-                NAVBAR SCROLL BLUR
-            ========================= */
-            const navbar = document.querySelector(".navbar");
-
-            window.addEventListener("scroll", () => {
-                if (navbar) {
-                navbar.classList.toggle("scrolled", window.scrollY > 50);
-                }
-            });
-
-
-            /* =========================
-            ABOUT TOGGLE
-            ========================= */
-            const toggleBtn = document.getElementById("toggleAbout");
-            const aboutMore = document.querySelector(".about-more");
-
-            if (toggleBtn && aboutMore) {
-            toggleBtn.addEventListener("click", () => {
-                aboutMore.classList.toggle("show");
-
-                toggleBtn.textContent = aboutMore.classList.contains("show")
-                ? "Tutup"
-                : "Lihat selengkapnya";
-            });
-            }
-
-            });
-        </script>
-
-        <!-- Script Footer -->
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            const footerContainer = document.getElementById("footer");
-
-            if (footerContainer) {
-                fetch("footer.html")
-                .then(response => response.text())
-                .then(data => {
-                    footerContainer.innerHTML = data;
-                })
-                .catch(error => {
-                    console.error("Gagal memuat footer:", error);
-                });
-            }
-            });
-        </script>
-
-        <!-- Konfirmasi User -->
-        <div class="popup-overlay" id="welcomePopup">
-            <div class="popup-box">
-                <h2>Welcome</h2>
-                <p>
-                Thank you for visiting my portfolio.<br>
-                Please click continue to explore my profile.
-                </p>
-                <button id="popupBtn">Continue</button>
-            </div>
-        </div>
-        <script>
-        document.addEventListener("DOMContentLoaded", () => {
-        const popup = document.getElementById("welcomePopup");
-        const btn = document.getElementById("popupBtn");
-
-        if (!localStorage.getItem("visited")) {
-            popup.style.display = "flex";
-        } else {
-            popup.style.display = "none";
+            setTimeout(typeEffect, deleting ? 45 : 90);
         }
 
-        btn.addEventListener("click", () => {
-            localStorage.setItem("visited", "true");
-            popup.style.display = "none";
-        });
-        });
-        </script>
-        <!-- End Konfirmasi User -->
+        if (roleElement) typeEffect();
 
-    </body>
-    <div id="footer"></div>
+
+        /* NAVBAR SCROLL EFFECT */
+        const navbar = document.getElementById("navbar");
+
+        function updateNavbar() {
+            if (navbar) {
+                navbar.classList.toggle("scrolled", window.scrollY > 30);
+            }
+        }
+
+        window.addEventListener("scroll", updateNavbar, { passive: true });
+        updateNavbar();
+
+
+        /* MOBILE NAVIGATION */
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        function closeMenu() {
+            if (!menuToggle || !navMenu) return;
+
+            navMenu.classList.remove("open");
+            menuToggle.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+            document.body.classList.remove("menu-open");
+        }
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener("click", function () {
+                const isOpen = navMenu.classList.toggle("open");
+
+                menuToggle.classList.toggle("active", isOpen);
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+                document.body.classList.toggle("menu-open", isOpen);
+            });
+
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", closeMenu);
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") closeMenu();
+            });
+        }
+
+
+        /* ABOUT READ MORE */
+        const toggleAbout = document.getElementById("toggleAbout");
+        const aboutMore = document.getElementById("aboutMore");
+
+        if (toggleAbout && aboutMore) {
+            toggleAbout.addEventListener("click", function () {
+                const isExpanded =
+                    toggleAbout.getAttribute("aria-expanded") === "true";
+
+                aboutMore.hidden = isExpanded;
+                toggleAbout.setAttribute("aria-expanded", String(!isExpanded));
+
+                toggleAbout.innerHTML = isExpanded
+                    ? 'Read More <span>↗</span>'
+                    : 'Read Less <span>↑</span>';
+            });
+        }
+
+
+        /* ACTIVE NAVIGATION ON SCROLL */
+        const sections = document.querySelectorAll(
+            "#home, #about, #skills, #projects, #education, #experience"
+        );
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+
+                    navLinks.forEach(function (link) {
+                        const isActive =
+                            link.getAttribute("href") === "#" + entry.target.id;
+
+                        link.classList.toggle("active", isActive);
+                    });
+                });
+            }, {
+                rootMargin: "-30% 0px -60% 0px"
+            });
+
+            sections.forEach(function (section) {
+                observer.observe(section);
+            });
+        }
+
+
+        /* CURRENT YEAR */
+        const currentYear = document.getElementById("currentYear");
+
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
+
+
+        /* WELCOME POPUP */
+        const popup = document.getElementById("welcomePopup");
+        const popupBtn = document.getElementById("popupBtn");
+
+        if (popup && popupBtn) {
+            let alreadyVisited = false;
+
+            try {
+                alreadyVisited =
+                    localStorage.getItem("bfrPortfolioVisited") === "true";
+            } catch (error) {
+                alreadyVisited = true;
+            }
+
+            if (!alreadyVisited) {
+                popup.hidden = false;
+                document.body.classList.add("popup-open");
+            }
+
+            popupBtn.addEventListener("click", function () {
+                try {
+                    localStorage.setItem("bfrPortfolioVisited", "true");
+                } catch (error) {
+                    /* Website remains usable if storage is unavailable. */
+                }
+
+                popup.hidden = true;
+                document.body.classList.remove("popup-open");
+            });
+
+            popup.addEventListener("click", function (event) {
+                if (event.target === popup) {
+                    popup.hidden = true;
+                    document.body.classList.remove("popup-open");
+                }
+            });
+        }
+
+    });
+    </script>
+
+</body>
 </html>

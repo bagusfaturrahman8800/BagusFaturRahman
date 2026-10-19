@@ -1,84 +1,302 @@
+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bagus Fatur Rahman | Portfolio</title>
-        <link rel="stylesheet" href="/assets/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Project Banner -->
-        <section class="project-banner">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <a href="index.html" class="btn-back">← Home</a>
+    <meta
+        name="description"
+        content="Selected projects by Bagus Fatur Rahman, including web development and internal reservation systems."
+    >
+    <meta name="theme-color" content="#f7f9fc">
 
-            <!-- Social Icons -->
-            <div class="banner-social">
-                <a href="https://www.linkedin.com/in/bagus-fatur-rahman/" target="_blank">
-                    <img src="/assets/icon/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/bagusfaturrhmn" target="_blank">
-                    <img src="/assets/icon/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://wa.me/6283182004753" target="_blank">
-                    <img src="/assets/icon/whatsapp.png" alt="WhatsApp">
-                </a>
-            </div>
+    <title>Projects | Bagus Fatur Rahman</title>
 
-        </section>
+    <link rel="stylesheet" href="assets/style.css?v=202610">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
 
-        <!-- Section Project -->
-        <section class="section">
-            <h3>All Projects</h3>
+<body class="projects-page">
 
-            <div class="project-cards">
+    <!-- Header -->
+    <header class="projects-header">
+        <div class="projects-header-inner">
+            <a href="index.html" class="projects-brand" aria-label="Back to homepage">
+                <span class="brand-mark">B</span>
+                <span>
+                    <strong>Bagus Fatur Rahman</strong>
+                    <small>Portfolio & Projects</small>
+                </span>
+            </a>
 
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="/assets/vegakonstruksi.png" alt="Project 1">
-                    </div>
+            <a href="index.html" class="btn-back">
+                <span aria-hidden="true">←</span>
+                Back to Home
+            </a>
+        </div>
+    </header>
 
-                    <div class="project-body">
-                        <h4>On Porgress</h4>
-                        <p>CV Vega Konstruksi</p>
-                        <a href="#">Priview</a>
-                    </div>
-                </div>
+    <main>
+        <!-- Hero -->
+        <section class="projects-hero">
+            <div class="projects-hero-content">
+                <span class="section-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    SELECTED WORKS
+                </span>
 
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="/assets/iftar.png" alt="Project 2">
-                    </div>
+                <h1>
+                    Turning ideas into
+                    <span>digital solutions.</span>
+                </h1>
 
-                    <div class="project-body">
-                        <h4>Iftar Reservasi IBIS Hotel Padang</h4>
-                        <p>Internal System</p>
-                        <a href="https://ibispadang.com/iftaribis/">Priview</a>
-                    </div>
-                </div>
+                <p>
+                    A collection of projects, systems, and digital experiences
+                    I've worked on. Each project represents a process of
+                    learning, problem-solving, and building something useful.
+                </p>
 
-                <div class="project-card">
-                <div class="project-img">
-                    <img src="/assets/comingsoon/comingsoon.jpg" alt="Project 3">
-                </div>
-
-                <div class="project-body">
-                    <h4>Coming Soon!</h4>
-                    <p>Open for new projects and collaborations</p>
-                    <a href="#">Priview</a>
-                </div>
+                <div class="projects-hero-meta">
+                    <span><span class="meta-dot"></span> Web Development</span>
+                    <span><span class="meta-dot"></span> Information Technology</span>
+                    <span><span class="meta-dot"></span> System Development</span>
                 </div>
             </div>
+
+            <div class="projects-hero-decoration" aria-hidden="true">
+                <div class="decoration-card decoration-card-one">
+                    <span class="decoration-icon">&lt;/&gt;</span>
+                    <span>Build</span>
+                </div>
+
+                <div class="decoration-card decoration-card-two">
+                    <span class="decoration-icon">✳</span>
+                    <span>Innovate</span>
+                </div>
+
+                <div class="decoration-orbit orbit-one"></div>
+                <div class="decoration-orbit orbit-two"></div>
+                <div class="decoration-center">BFR</div>
+            </div>
         </section>
-        <div id="footer"></div>
-        <script>
-            fetch('footer.html')
-                .then(res => res.text())
-                .then(html => {
-                document.getElementById('footer').innerHTML = html;
-                });
-        </script>
-    </body>
+
+        <!-- Projects -->
+        <section class="projects-section" id="projects">
+            <div class="projects-section-heading">
+                <div>
+                    <span class="section-eyebrow">PORTFOLIO</span>
+                    <h2>Featured Projects<span>.</span></h2>
+                    <p>
+                        Some of the work I'm building and developing.
+                    </p>
+                </div>
+
+                <span class="projects-count">03 PROJECTS</span>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 01 -->
+                <article class="project-card">
+                    <div class="project-image project-image-vega">
+                        <img
+                            src="assets/vegakonstruksi.png"
+                            alt="CV Vega Konstruksi website project"
+                            loading="lazy"
+                        >
+
+                        <span class="project-number">01</span>
+
+                        <span class="project-status status-progress">
+                            <span></span>
+                            In Progress
+                        </span>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-category">
+                            WEBSITE DEVELOPMENT
+                        </div>
+
+                        <h3>CV Vega Konstruksi</h3>
+
+                        <p>
+                            A website project for CV Vega Konstruksi, currently
+                            under development. The project focuses on presenting
+                            the company's identity and services through a
+                            professional digital presence.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Web Design</span>
+                            <span>Development</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <span class="project-action-disabled">
+                                Preview unavailable
+                            </span>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 02 -->
+                <article class="project-card">
+                    <div class="project-image project-image-iftar">
+                        <img
+                            src="assets/iftar.png"
+                            alt="Iftar reservation management system for ibis Hotel Padang"
+                            loading="lazy"
+                        >
+
+                        <span class="project-number">02</span>
+
+                        <span class="project-status status-live">
+                            <span></span>
+                            Project Online
+                        </span>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-category">
+                            INTERNAL SYSTEM
+                        </div>
+
+                        <h3>Iftar Reservation System</h3>
+
+                        <p>
+                            A reservation management system developed for
+                            ibis Hotel Padang to support iftar booking
+                            operations, reservation records, and more organized
+                            management of booking information.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Dashboard</span>
+                        </div>
+
+                        <a
+                            href="https://ibispadang.com/iftaribis/"
+                            class="project-action"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open Iftar Reservation System"
+                        >
+                            <span>View Project</span>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 03 -->
+                <article class="project-card project-card-upcoming">
+                    <div class="project-image project-image-coming">
+                        <img
+                            src="assets/comingsoon/comingsoon.jpg"
+                            alt="Upcoming portfolio project"
+                            loading="lazy"
+                        >
+
+                        <span class="project-number">03</span>
+
+                        <span class="project-status status-upcoming">
+                            <span></span>
+                            Coming Soon
+                        </span>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-category">
+                            NEXT CHAPTER
+                        </div>
+
+                        <h3>Something New Is Coming</h3>
+
+                        <p>
+                            New ideas are in the making. I'm open to
+                            collaborations, interesting challenges, and
+                            opportunities to build useful digital products
+                            and technology solutions.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>New Ideas</span>
+                            <span>Collaboration</span>
+                        </div>
+
+                        <a href="index.html#about" class="project-action">
+                            <span>Let's Connect</span>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="projects-cta">
+            <div class="projects-cta-content">
+                <span class="section-eyebrow">HAVE AN IDEA?</span>
+                <h2>Let's build something meaningful.</h2>
+                <p>
+                    Have a project, collaboration idea, or opportunity in mind?
+                    I'd be happy to hear about it.
+                </p>
+            </div>
+
+            <div class="projects-cta-actions">
+                <a
+                    href="https://wa.me/6283182004753"
+                    class="btn-contact"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Contact Me <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/bagus-fatur-rahman/"
+                    class="btn-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="projects-footer">
+        <div class="projects-footer-inner">
+            <a href="index.html" class="footer-brand">
+                BAGUS FATUR RAHMAN<span>.</span>
+            </a>
+
+            <p>
+                Designed & developed with purpose.
+            </p>
+
+            <p class="footer-copyright">
+                © <span id="current-year"></span> Bagus Fatur Rahman
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
 </html>
